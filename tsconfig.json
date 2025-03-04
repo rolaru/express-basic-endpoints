@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "lib": [
+        "es2020"
+    ],
+    "target": "es2020",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "strictPropertyInitialization": false
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
+}

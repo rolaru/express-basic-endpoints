@@ -1,0 +1,46 @@
+{
+  "name": "express-basic-endpoints",
+  "version": "1.0.0",
+  "description": "Basic Express CRUD endpoints demo",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "tsx ./index.ts",
+    "dev": "tsx watch ./index.ts",
+    "create-migration": "npx typeorm-ts-node-esm migration:generate -d ./db/data-source-migrations.ts",
+    "up-migration": "npx typeorm-ts-node-esm migration:run -d ./db/data-source-migrations.ts",
+    "down-migration": "npx typeorm-ts-node-esm migration:revert -d ./db/data-source-migrations.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rolaru/express-basic-endpoints.git"
+  },
+  "keywords": [
+    "Basic",
+    "Express",
+    "CRUD",
+    "endpoints",
+    "demo"
+  ],
+  "author": "Razvan Olaru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rolaru/express-basic-endpoints/issues"
+  },
+  "homepage": "https://github.com/rolaru/express-basic-endpoints#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "class-validator": "^0.14.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pg": "^8.13.3",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.21"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.9",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}
